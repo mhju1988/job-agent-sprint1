@@ -2,7 +2,6 @@
 
 Solo university project (W-HS "Agentic AI"). Scrapes/fetches jobs, matches against a CV, generates tailored cover letter + CV variant, tracks progress in Supabase, and surfaces it in a Streamlit dashboard.
 
-See `PLAN.md` for sprint-by-sprint deliverables and `CLAUDE.md` for development rules.
 
 ## Setup
 
@@ -14,4 +13,4 @@ uv run pytest
 ```
 
 ## Stack
-Python 3.11 · CrewAI · Playwright · python-docx · pypdf · Supabase (Postgres + pgvector) · GWDG LLM · Streamlit
+Python 3.11  · Playwright · python-docx · pypdf · Supabase (Postgres + pgvector) · GWDG LLM · Streamlit
