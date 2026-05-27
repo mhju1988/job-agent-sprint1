@@ -1,7 +1,7 @@
 # Automated Job Application Agent — Project Rules
 
 ## Context
-University course "Agentic AI" (W-HS). Solo project, 5 sprints, 20h/week.
+University course "Agentic AI" (W-HS). Solo project, 4 sprints, 20h/week.
 Spec source: `../AAI_ Projektvorschläge _ Moodle.pdf` → Project #7.
 
 ## Stack (fixed — do not substitute)
@@ -11,7 +11,7 @@ Spec source: `../AAI_ Projektvorschläge _ Moodle.pdf` → Project #7.
 - **python-docx**, **pypdf** for documents
 - **Supabase** (Postgres + pgvector) for persistence
 - **GWDG LLM endpoint** (OpenAI-compatible) — never call paid APIs
-- **Streamlit** for UI (sprint 5)
+- **Streamlit** for UI (sprint 4)
 
 ## Code rules
 - Type hints everywhere; `pydantic` for all LLM I/O schemas
@@ -31,6 +31,9 @@ Spec source: `../AAI_ Projektvorschläge _ Moodle.pdf` → Project #7.
 
 ## Sprint gates
 Sprint complete only when: deliverable demoed + tests green + **`code-reviewer` subagent run with no 🔴 blockers** + `PROGRESS.md` updated + commit tagged `sprint-N`.
+
+## Known external dependencies
+- GWDG embedding endpoint (`/v1/embeddings`) — required for Matcher live runs; check status at https://docs.hpc.gwdg.de/services/ai-services/saia/ if timing out
 
 ## Out of scope
 - Auto-submitting applications (manual click only — ToS/GDPR)

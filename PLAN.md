@@ -26,32 +26,30 @@ User → Streamlit UI
 
 ## Sprint deliverables
 
-### Sprint 1 — Research & Architecture
+### Sprint 1 — Research, Architecture & Scout Agent
 - [ ] Evaluate 3 job sources (one API, one scrape target, one fallback) — write `docs/sources.md`
 - [ ] Legal note: ToS + GDPR — `docs/legal.md`
 - [ ] CrewAI hello-world: 1 agent calls GWDG LLM successfully
 - [ ] Supabase schema + migrations applied
 - [ ] Repo skeleton + CI (ruff, mypy, pytest)
-
-### Sprint 2 — Scout Agent
 - [ ] Playwright scraper for 1 site (or API client)
 - [ ] Job extraction → structured `Job` pydantic model
 - [ ] Persist to Supabase; dedupe by URL
 - [ ] 10 jobs fetched end-to-end in tests
 
-### Sprint 3 — Matcher Agent
+### Sprint 2 — Matcher Agent
 - [ ] CV PDF parser → `Profile` model
 - [ ] Embeddings via GWDG; store in pgvector
 - [ ] Cosine similarity + LLM gap analysis
 - [ ] Top-N ranked jobs with rationale
 
-### Sprint 4 — Writer Agent
+### Sprint 3 — Writer Agent
 - [ ] Cover letter template (Jinja + LLM fill)
 - [ ] CV variant: re-rank/emphasize skills per job
 - [ ] python-docx export → `/artifacts/`
 - [ ] Quality check pass (no hallucinated experience)
 
-### Sprint 5 — Tracker & UI
+### Sprint 4 — Tracker & UI
 - [ ] Streamlit dashboard: jobs / matches / applications
 - [ ] Status state machine: new → applied → interview → offer/rejected
 - [ ] Follow-up reminder logic (n days after applied)
